@@ -1,4 +1,11 @@
 <div class="my-page">
     <h5>Hello, Drupal!</h5>
     <p>{{ date }}</p>
+    
+    {% if entity_info %}
+        <h5>Usage of Entity Info Service</h5>
+        <div>ID: {{ entity_info.id }}</div>
+        <div>Label: {{ entity_info.label }}</div>
+        <div>Type: {{ entity_info.type }}</div>
+    {% endif %}
 </div>

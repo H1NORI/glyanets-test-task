@@ -11,6 +11,7 @@ function my_first_module_theme($existing, $type, $theme, $path)
         'my_first_page' => [
             'variables' => [
                 'date' => NULL,
+                'entity_info' => NULL,
             ],
             'template' => 'my-first-page',
         ],
