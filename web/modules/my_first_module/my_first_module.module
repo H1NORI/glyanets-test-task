@@ -4,3 +4,15 @@
  * @file
  * Primary module hooks for My First Module module.
  */
+
+function my_first_module_theme($existing, $type, $theme, $path)
+{
+    return [
+        'my_first_page' => [
+            'variables' => [
+                'date' => NULL,
+            ],
+            'template' => 'my-first-page',
+        ],
+    ];
+}
